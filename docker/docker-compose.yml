@@ -2,7 +2,7 @@ version: '3'
 
 services:
     # Agents
-    testCenter-agent:
+    testcenter-agent:
         command: ['test-center --port 8020']
         build:
             context: https://github.com/petridishdev/aries-cloudagent-python.git#openapi-demo
@@ -57,7 +57,7 @@ services:
         networks:
             - aca
         depends_on:
-            - testCenter-agent
+            - testcenter-agent
         environment:
             - RUNMODE=${RUNMODE}
             - TEST_CENTER_AGENT_HOST=${TEST_CENTER_AGENT_HOST}
