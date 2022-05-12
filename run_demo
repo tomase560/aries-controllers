@@ -11,7 +11,7 @@ function start_logs() {
 function web_start() {
 	echo "Starting all agents and controllers, this may take a moment."
 
-	TEST_CENTER_AGENT_HOST="testCenter-agent"
+	TEST_CENTER_AGENT_HOST="testcenter-agent"
 	ALICE_AGENT_HOST=${ALICE_AGENT_HOST:-"localhost"}
 	ACME_AGENT_HOST="acme-agent"
 
